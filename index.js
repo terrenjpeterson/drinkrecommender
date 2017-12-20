@@ -22,11 +22,20 @@ var nodes = [{ "node": 1, "message": "Are you interested in a beverage with alco
              { "node": 3, "message": "Do you want a hot drink?", "yes": 101, "no": 102 },
              { "node": 4, "message": "Do you want a sweet tasting drink?", "yes": 6, "no": 7 },
              { "node": 5, "message": "Are you thirsty for a beer?", "yes": 8, "no": 9 },
-             { "node": 6, "message": "Do you want a clear beverage?", "yes": 103, "no": 104 },
-             { "node": 7, "message": "Would you rather have a sour drink than a dry tasting one?", "yes": 105, "no": 106 },
+             { "node": 6, "message": "Do you want a clear beverage?", "yes": 17, "no": 18 },
+             { "node": 7, "message": "Would you rather have a sour drink than a dry tasting one?", "yes": 11, "no": 12 },
              { "node": 8, "message": "Do you like beers that have a bitter or hoppy flavor?", "yes": 107, "no": 108},
-             { "node": 9, "message": "Do you want a drink with bubbles?", "yes": 109, "no": 10},
-             { "node": 10, "message": "Do you prefer red wine over white?", "yes": 110, "no": 111},
+             { "node": 9, "message": "Do you want a drink with bubbles?", "yes": 109, "no": 10 },
+             { "node": 10, "message": "Do you prefer red wine over white?", "yes": 110, "no": 111 },
+             { "node": 11, "message": "Would you like some sweet flavor to mix with the sour?", "yes": 105, "no": 112 },
+             { "node": 12, "message": "Do you prefer to taste the flavor of the alcohol, versus hidden?", "yes": 13, "no": 14 },
+             { "node": 13, "message": "Do you prefer a clear drink?", "yes": 16, "no": 19 },
+             { "node": 14, "message": "Do you like coffee flavored drinks?", "yes": 15, "no": 113 },
+             { "node": 15, "message": "When you have coffee, do you like it black and omit any cream?", "yes": 115, "no": 116 },
+             { "node": 16, "message": "Do you prefer ice and carbonation in your drink?", "yes": 117, "no": 106 },
+             { "node": 17, "message": "Do you like the flavor of mint?", "yes": 103, "no": 118 },
+             { "node": 18, "message": "Do you like coconuts?", "yes": 119, "no": 104 },
+             { "node": 19, "message": "Are you looking for a strong tasting drink?", "yes": 114, "no": 120 },
 
 // Answers & descriptions
              { "node": 101, "message": "Hot Chocolate", "yes": 0, "no": 0, "description": "Hot chocolate is a great treat to warm you up on a cold day. Don't forget to add the marshmallows on top!" },
@@ -39,10 +48,17 @@ var nodes = [{ "node": 1, "message": "Are you interested in a beverage with alco
              { "node": 108, "message": "Stout", "yes": 0, "no": 0, "description": "Stout is a dark beer made using roasted malt or roasted barley, hops, water and yeast. There are multiple varieties, including Milk Stout, Oatmeal Stout, and Irish Stout." },
              { "node": 109, "message": "Prosecco", "yes": 0, "no": 0, "description": "Prosecco is an Italian White wine similar to Champagne, with a intensely aromatic and crisp flavor. It is less expensive to produce, and does not need to be aged. Serve cold in a tall flute glass, and make a toast!" },
              { "node": 110, "message": "Cabernet Sauvignon", "yes": 0, "no": 0, "description": "Cabernet Sauvignon is a red wine, and available around the world. A glass of Cab goes well with many meals, including those where beef is served. It tends to be a full-bodied wine, with flavors likened to black cherry and black olives." },
-             { "node": 111, "message": "Chardonnay", "yes": 0, "no": 0, "description": "Chardonnay is a white wine, and earns its name from the variety of grape it comes from. A glass of Chardonnay should be chilled, and is an excellent pairing for chicken or fish." }
+             { "node": 111, "message": "Chardonnay", "yes": 0, "no": 0, "description": "Chardonnay is a white wine, and earns its name from the variety of grape it comes from. A glass of Chardonnay should be chilled, and is an excellent pairing for chicken or fish." },
+             { "node": 112, "message": "Margarita", "yes": 0, "no": 0, "description": "A Margaria is a drink that can be served over ice, or frozen where the ice has been finely crushed. The glass can have salt added to the rim, and the drink contains tequila. The tanginess of the drink comes from lime juice and an orange liqueur, such as Cointreau or triple sec. Garnish with a slice of lime." },
+             { "node": 113, "message": "Cosmopolitan", "yes": 0, "no": 0, "description": "A Cosmopolitan, or Cosmo, is a drink with a vodka base, and flavored with a fruit, including raspberry, cranberry, and pomegranate. Also included are an orange liqueur such as Cointreau, as well as lime juice. The contents are mixed with ice in a shaker, then strained into a martini glass. A garnish is optional, but can use a citrus peel." },
+             { "node": 114, "message": "Manhattan", "yes": 0, "no": 0, "description": "A Manhattan is a clear, dark drink made with two parts rye whiskey to one part sweet vermouth, with a dash of bitters. The ingredients should be combined in a shaker filled with ice and then stirred. Serve by pouring the contents into a chilled cocktail glass, and garnish with a cherry." },
+             { "node": 115, "message": "Black Russian", "yes": 0, "no": 0, "description": "A Black Russian is a drink combining two parts vodka to one part coffee flavored liqueur, such as Kahlua. Combine the ingredients in a mixing glass with ice and stir. Serve in an old fashion glass with new ice cubes, and no garnish." },
+             { "node": 116, "message": "White Russian", "yes": 0, "no": 0, "description": "A White Russian is a drink combining equal parts of vodka, a coffee flavored liqueur, such as Kahlua, and heavy cream. Combine the ingredients in a mixing glass with ice and stir. Serve in an old fashion glass with new ice cubes, and no garnish." },
+             { "node": 117, "message": "Gin and Tonic", "yes": 0, "no": 0, "description": "A Gin and Tonic is a drink made by combining gin and tonic water, usually one part gin to every two parts of tonic water. The ingredients can be combined in the serving glass filled with ice and stirred, garnished with a slice of lime. It's a popular drink with meals or on a warm summer day." },
+             { "node": 118, "message": "Tom Collins", "yes": 0, "no": 0, "description": "A Tom Collins is a drink made with one part lemon juice, one part simple syrup, and two parts gin. The ingredients are mixed shaker filled with ice, then strained into a tall glass filled with ice. Top with club soda and garnish with a lemon wheel and a cherry." },
+             { "node": 119, "message": "Pina Colada", "yes": 0, "no": 0, "description": "A Pina Cola is a tropical drink made with both white and dark rum, fresh diced pineapple, pineapple juice, and coconut cream. The ingredients are mixed in a blender with ice until smooth and frosty. Once complete, it is served in a glass garnished with more pineapple." },
+             { "node": 120, "message": "Old Fashioned", "yes": 0, "no": 0, "description": "An Old Fashioned is a drink that starts with bourbon, then adds sugar and a splash of club soda. Garnish with a slice of orange and a maraschino cherry." }
 ];
-
-
 
 // this is used for keep track of visted nodes when we test for loops in the tree
 var visited;
