@@ -1,0 +1,23 @@
+{
+  "name": "amazon alexa drink recommender",
+  "version": "1.0.0",
+  "description": "An Alexa skill that asks a series of yes no questions and recommends a drink.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/terrenjpeterson/drinkrecommender.git"
+  },
+  "keywords": [
+    "alexa",
+    "drink recommender",
+    "bartender"
+  ],
+  "author": "Terren Peterson",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "alexa-sdk": "^1.0.6"
+  }
+}
