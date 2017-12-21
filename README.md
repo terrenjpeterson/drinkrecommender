@@ -2,7 +2,7 @@
 
 Alexa skill using decision template making drink recommendations.
 
-** Table of Contents **
+**Table of Contents**
 
 - [Where do the questions come from?](#data-source-for-questions)
 - [How do you deploy the skill?](#deploy-from-command-line)
